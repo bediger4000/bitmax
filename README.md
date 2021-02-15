@@ -47,15 +47,15 @@ that's the answer.
 
 This runs in O(n) time, where n is the value of the input integer.
 If you have an input like 8 or 16 or 268435456,
-it counts from n to 2\*n, doing n increments,
+it potentially counts from n to 2\*n, doing n increments,
 and finding the number of bits in n integers.
-This later part makes the constant part of the run-time large.
+This latter part makes the constant part of the run-time large.
 
 ---
 
 ### Algorithm 2
 
-1. Find the lowest 1-bit with a 0-bit to it's left
+1. Find the lowest 1-bit with a 0-bit to its left
 in the input value.
 2. Put a zero in the position of the 1-bit,
 and a one in the position of the 0-bit.
